@@ -38,7 +38,7 @@ button:hover{
     place-items: center;
     background: rgba(0,0,0,0.3);
     display: none;
-    animation: openModal 1s ease forwards;
+    animation: openModal 500ms ease forwards;
 }
 
 .modal .card{
@@ -102,6 +102,19 @@ button:hover{
     }
 }
 
+@keyframes closeModal {
+    form{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+.close-modal-animation{
+    animation: closeModal 500ms ease forwards;
+}
 
 
 /* ============= media queries =============  */
